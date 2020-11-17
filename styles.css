@@ -1,0 +1,162 @@
+* {
+    font-family: verdana, sans-serif;
+    font-size: 16pt;
+}
+
+body {
+    width: 100%;
+    margin: 20px auto;
+    background: black;
+    border: 1px solid black;
+}
+
+html {
+    background: black (10, 10, 156);
+}
+
+img {
+    margin-right: 20px;
+}
+
+.username {
+    text-align: center;
+    background: greenyellow;
+    color: rgb(0, 0, 0);
+    font-family: Helvetica;
+    font-size: 20pt;
+    padding: 4px;
+}
+
+.info {
+    color: aliceblue;
+    font-style: italic;
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.subhead {
+    font-weight: bold;
+}
+
+.taken,
+.error {
+    color: red;
+}
+
+.available {
+    color: green;
+}
+
+.whisper {
+    font-style: italic;
+    color: #006600;
+}
+
+.text {
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#logo {
+    font-family: Georgia;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 97px;
+    color: green;
+}
+
+#robin {
+    position: relative;
+    border: 0px;
+    margin-left: -6px;
+    margin-right: 0px;
+    top: 17px;
+    -moz-box-shadow: 0px 0px 0px;
+    -webkit-box-shadow: 0px 0px 0px;
+    box-shadow: 0px 0px 0px;
+}
+
+#useds {
+    margin-top: 50px;
+}
+
+#fondo {
+    background-color: rgb(0, 0, 0);
+}
+
+.circulo {
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 40%;
+}
+
+.txt {
+    font-size: 3cm;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar a:hover {
+    background: green;
+    color: greenyellow;
+}
+
+.slider {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    height: auto;
+    margin: auto;
+    animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+    width: 85%;
+    list-style: none;
+}
+
+.slider img {
+    width: 85%;
+    ;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
