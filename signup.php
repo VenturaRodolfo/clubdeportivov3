@@ -27,7 +27,7 @@ if (isset($_POST['user'])) {
 	if ($user == "" || $pass == "") 
 		$error = 'Not all fields were entered<br></br>'; 
 	else {
-    $result = Capsule::table('users')->select(['nombre'])->where('nombre', $nombre)->first();
+    $result = Capsule::table('usuarios')->select(['nombre'])->where('nombre', $nombre)->first();
 
 		if (!$result) 
 			$error = 'Nombre ya existente<br></br>'; 
