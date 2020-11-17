@@ -1,5 +1,6 @@
 <?php 
 require_once 'header.php';
+use Illuminate\Database\Capsule\Manager as Capsule;
 
 echo <<<_END
   <script>
@@ -26,12 +27,14 @@ if (isset($_POST['user'])) {
 	if ($user == "" || $pass == "") 
 		$error = 'Not all fields were entered<br></br>'; 
 	else {
-		$result = queryMysql("SELECT * FROM usuario WHERE user='$user'");
+    $result = Capsule::table('users')->select(['nombre'])->where('nombre', $nombre)->first();
 
-		if ($result->num_rows) 
+		if (!$result) 
 			$error = 'Nombre ya existente<br></br>'; 
 		else {
-			queryMysql("INSERT INTO usuario VALUES('$user', '$pass')"); 
+      Capsule::table('usuario')->insert(['user' => $user, 'cpass' => $pass ]);
+
+      //queryMysql("INSERT INTO usuario VALUES('$user', '$pass')"); 
 			die('<center><h4 class="text">Account created</h4><br><h4 class="text">Please Log in.</h4></center></div></body></html>'); 
 		}
 	}

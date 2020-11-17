@@ -1,0 +1,3 @@
+Como primer paso abra el documento .mwb
+luego procedemos a  darle Control + G e instalamos la base de datos
+abrimos xampp y prendemos apache y ya podremos utilizar el sistema.
